@@ -7,14 +7,14 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-       public int maxHealth = 5;          // Maximum health of the player
+    public int maxHealth = 5;          // Maximum health of the player
     private int currentHealth;         // Current health of the player
     public float invincibilityDuration = 1f; // Duration of invincibility frames
     private bool isInvincible = false; // Tracks if the player is currently invincible
-
-    public Image healthBar;            // Reference to the health bar UI element
     private Animator animator;         // Reference to the Animator
-    public TMP_Text  restartText;           // Reference to the "Press R to Restart" text UI element
+
+    // Reference to the TextMesh Pro UI element
+    public TextMeshProUGUI healthText;
 
     void Start()
     {
@@ -22,16 +22,10 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
 
         // Get the Animator component
-        animator = transform.Find("PlayerBody").GetComponent<Animator>();
+        animator = transform.Find("ToonRTS_demo_Knight").GetComponent<Animator>();
 
-        // Update the health bar UI at the start
-        UpdateHealthBar();
-
-        // Hide the restart text initially
-        if (restartText != null)
-        {
-            restartText.gameObject.SetActive(false);
-        }
+        // Update the health text at the start
+        UpdateHealthText();
     }
 
     // This function handles taking damage
@@ -42,11 +36,8 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth < 0) currentHealth = 0;
 
-        // Trigger the isHit animation
-        animator.SetTrigger("isHit");
-
-        // Update the health bar UI
-        UpdateHealthBar();
+        // Update the health text
+        UpdateHealthText();
 
         // Start invincibility frames
         if (currentHealth > 0) // Only trigger invincibility if still alive
@@ -59,13 +50,23 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    // This function updates the health display text
+    private void UpdateHealthText()
+    {
+        // Update the text to show current health / max health
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + currentHealth + "/" + maxHealth;
+        }
+    }
+
     // This function handles player death
     private void Die()
     {
         Debug.Log("Player Died");
 
         // Disable the player's movement (disable the character controller or movement script)
-        CleanThirdPersonController playerMovement = GetComponent<CleanThirdPersonController>();
+        PlayerMovement playerMovement = GetComponent<PlayerMovement>();
         if (playerMovement != null)
         {
             playerMovement.enabled = false;  // Disable movement script or any relevant behavior
@@ -92,17 +93,9 @@ public class PlayerHealth : MonoBehaviour
             playerBody.gameObject.SetActive(false);  // Disable the PlayerBody GameObject
         }
 
-        // Show the restart text
-        if (restartText != null)
-        {
-            restartText.gameObject.SetActive(true);
-        }
-
         // Start listening for restart input
         StartCoroutine(WaitForRestart());
     }
-
-
 
     // Activates invincibility for a set duration
     private System.Collections.IEnumerator ActivateInvincibility()
@@ -110,25 +103,6 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = true;
         yield return new WaitForSeconds(invincibilityDuration);
         isInvincible = false;
-    }
-
-    // Updates the health bar UI
-    private void UpdateHealthBar()
-    {
-        if (healthBar != null)
-        {
-            healthBar.fillAmount = (float)currentHealth / maxHealth;
-        }
-    }
-
-    // Heal the player (optional)
-    public void Heal(int amount)
-    {
-        currentHealth += amount;
-        if (currentHealth > maxHealth) currentHealth = maxHealth;
-
-        // Update the health bar UI
-        UpdateHealthBar();
     }
 
     // Wait for the player to press "R" to restart the scene
