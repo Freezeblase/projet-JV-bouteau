@@ -21,11 +21,13 @@ public class PlayerControler : MonoBehaviour
     void OnTriggerEnter(Collider other) 
     {
      if (other.gameObject.CompareTag("PickUp")) 
+        {
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
         }
-    
+    }
+
 
      void SetCountText() 
     {

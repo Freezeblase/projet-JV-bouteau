@@ -65,6 +65,11 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player Died");
 
+         if (animator != null)
+        {
+            animator.SetBool("isDead", true);
+        }
+
         // Disable the player's movement (disable the character controller or movement script)
         PlayerMovement playerMovement = GetComponent<PlayerMovement>();
         if (playerMovement != null)

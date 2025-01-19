@@ -9413,7 +9413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1889cf51763efad469a47737fc300db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 10
   invincibilityDuration: 1
   healthText: {fileID: 616484047}
 --- !u!1001 &1280485125
