@@ -5,15 +5,15 @@ using System.Collections;
 public class EnemyController : MonoBehaviour
 {
     public int health = 2;
-    public float detectionRadius = 10f;  // Radius within which the enemy detects the player
-    public float attackRange = 2f;       // Range at which the enemy attacks the player
-    public float attackCooldown = 1.5f; // Time between attacks
+    public float detectionRadius = 10f;  
+    public float attackRange = 2f;       
+    public float attackCooldown = 1.5f; 
 
-    private NavMeshAgent agent;          // Reference to the NavMeshAgent
-    private Animator animator;           // Reference to the Animator
-    private Transform player;            // Reference to the player
-    private bool isAttacking = false;    // Tracks if the enemy is attacking
-    private float attackCooldownTimer = 0f; // Timer for attack cooldown
+    private NavMeshAgent agent;          
+    private Animator animator;           
+    private Transform player;            
+    private bool isAttacking = false;    
+    private float attackCooldownTimer = 0f; 
 
     void Start()
     {
@@ -26,10 +26,8 @@ public class EnemyController : MonoBehaviour
     {
         if (player == null) return;
 
-        // Calculate distance to the player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // AI behavior
         if (distanceToPlayer <= detectionRadius && distanceToPlayer > attackRange)
         {
             ChasePlayer();
@@ -46,7 +44,6 @@ public class EnemyController : MonoBehaviour
             Idle();
         }
 
-        // Handle attack cooldown
         if (attackCooldownTimer > 0f)
         {
             attackCooldownTimer -= Time.deltaTime;
@@ -70,18 +67,15 @@ public class EnemyController : MonoBehaviour
     private void AttackPlayer()
     {
         isAttacking = true;
-        agent.isStopped = true; // Stop moving during the attack
+        agent.isStopped = true;
         animator.SetBool("IsMoving", false);
         animator.SetTrigger("IsAttacking");
 
-        // Reset attack cooldown timer
         attackCooldownTimer = attackCooldown;
     }
 
-    // Triggered by animation event at the moment of dealing damage
     public void AnimationEvent_DealDamage()
     {
-        // Ensure the enemy is still in range to attack
         if (Vector3.Distance(transform.position, player.position) <= attackRange)
         {
             Debug.Log("Player takes damage");
@@ -89,10 +83,9 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    // Triggered by animation event at the end of the attack animation
     public void AnimationEvent_AttackEnd()
     {
-        isAttacking = false; // Reset the attacking status
+        isAttacking = false; 
     }
 
     public void TakeDamage(int damage)
@@ -114,11 +107,9 @@ public class EnemyController : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        // Visualize detection radius in the Scene view
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
 
-        // Visualize attack range in the Scene view
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
@@ -127,7 +118,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("AttackArea"))
         {
-            TakeDamage(1);  // Reduce 1 HP on attack
+            TakeDamage(1);  
         }
     }
 }

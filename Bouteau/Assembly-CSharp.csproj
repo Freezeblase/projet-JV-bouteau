@@ -67,7 +67,6 @@
     <Compile Include="Assets\script\PlayerHealth.cs" />
     <Compile Include="Assets\script\player_movement.cs" />
     <Compile Include="Assets\script\script.cs" />
-    <Compile Include="Assets\script\BossBehavior.cs" />
     <Compile Include="Assets\script\EnemyBehavior.cs" />
     <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
     <Compile Include="Assets\script\EnemyController.cs" />

@@ -32,10 +32,6 @@ public class PlayerControler : MonoBehaviour
     void SetCountText() 
     {
        countText.text = "Count: " + count.ToString();
-    /*if (count >= 3)
-        {
-            winTextObject.SetActive(true);
-        }*/
     }
 
     // Update is called once per frame
