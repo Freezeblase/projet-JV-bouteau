@@ -10,6 +10,7 @@ public class EnemyBehavior : MonoBehaviour
     public float detectionRadius = 10f;  // Radius within which the enemy detects the player
     public float attackRange = 2f;       // Range at which the enemy attacks the player
     public float attackCooldown = 1.5f; // Time between attacks
+    public int attackStrenght = 1;
 
     private NavMeshAgent agent;          // Reference to the NavMeshAgent
     private Animator animator;           // Reference to the Animator
@@ -87,7 +88,7 @@ public class EnemyBehavior : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= attackRange)
         {
             Debug.Log("Player takes damage");
-            player.GetComponent<PlayerHealth>().TakeDamage(1);
+            player.GetComponent<PlayerHealth>().TakeDamage(attackStrenght);
         }
     }
 

@@ -361,6 +361,7 @@
 "Assets/AQUAS-Lite/Scripts/AQUAS_Lite_Reflection.cs"
 "Assets/imported stuff/ChestFree/RotatorTreasure.cs"
 "Assets/imported stuff/Collectible/Rotator.cs"
+"Assets/script/BossBehavior.cs"
 "Assets/script/EnemyBehavior.cs"
 "Assets/script/EnemyController.cs"
 "Assets/script/PlayerControler.cs"
