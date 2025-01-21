@@ -75,6 +75,8 @@
     <Compile Include="Assets\script\PlayerControler.cs" />
     <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
     <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
+    <Compile Include="Assets\PlayerInventory.cs" />
+    <Compile Include="Assets\script\win.cs" />
     <Compile Include="Assets\imported stuff\ChestFree\RotatorTreasure.cs" />
   </ItemGroup>
   <ItemGroup>

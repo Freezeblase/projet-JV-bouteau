@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerControler : MonoBehaviour
 {
- private int count;
+ public int count;
  public TextMeshProUGUI countText;
  public GameObject winTextObject;
 
@@ -29,13 +29,13 @@ public class PlayerControler : MonoBehaviour
     }
 
 
-     void SetCountText() 
+    void SetCountText() 
     {
        countText.text = "Count: " + count.ToString();
-    if (count >= 3)
+    /*if (count >= 3)
         {
             winTextObject.SetActive(true);
-        }
+        }*/
     }
 
     // Update is called once per frame

@@ -2136,7 +2136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &151612980
@@ -3098,7 +3098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &216842815
@@ -7105,7 +7105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &598125389
@@ -8228,7 +8228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &646537891
@@ -10861,7 +10861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &893548472
@@ -11061,7 +11061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!65 &896356879
@@ -11565,6 +11565,121 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
   m_PrefabInstance: {fileID: 988279136}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &989755120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.7265034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3383174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.405712
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236673747260368193, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757313786627309563, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_Name
+      value: flag2_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837686156402442357, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90906e29af70a894c9b378cb1b88816d, type: 2}
+    - target: {fileID: 8871363055206276684, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 475ee4e4ad4b0a44a90e5cafade66fe1, type: 2}
+    - target: {fileID: 8878838316505997143, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90906e29af70a894c9b378cb1b88816d, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6757313786627309563, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 989755123}
+    - targetCorrespondingSourceObject: {fileID: 6757313786627309563, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 989755122}
+  m_SourcePrefab: {fileID: 100100000, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+--- !u!1 &989755121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6757313786627309563, guid: 559f96a0bd0de754dabce8b5eaa29139, type: 3}
+  m_PrefabInstance: {fileID: 989755120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &989755122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989755121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410367c1c3857a449bc3ca1a932952e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredChests: 3
+  winTextCanvas: {fileID: 1117784984}
+--- !u!65 &989755123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989755121}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9, y: 3.02, z: 2.84}
+  m_Center: {x: 0, y: 1.61, z: 0}
 --- !u!1 &1010466087
 GameObject:
   m_ObjectHideFlags: 0
@@ -13313,7 +13428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &1221679731
@@ -13653,6 +13768,7 @@ GameObject:
   - component: {fileID: 1279533370}
   - component: {fileID: 1279533374}
   - component: {fileID: 1279533375}
+  - component: {fileID: 1279533376}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -13769,6 +13885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa52b26d350ce3c4db3056a8682c626a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
   countText: {fileID: 828265040}
   winTextObject: {fileID: 1117784984}
 --- !u!114 &1279533375
@@ -13786,6 +13903,20 @@ MonoBehaviour:
   maxHealth: 10
   invincibilityDuration: 1
   healthText: {fileID: 616484047}
+--- !u!114 &1279533376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279533369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a83de5c3bac44a46845c333c6aaecfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chestCount: 0
+  requiredChests: 3
 --- !u!1001 &1280485125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14759,7 +14890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &1319959528
@@ -16474,7 +16605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &1481045402
@@ -17622,7 +17753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &1599443830
@@ -18448,7 +18579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   detectionRadius: 10
-  attackRange: 2
+  attackRange: 2.1
   attackCooldown: 1.5
   attackStrenght: 1
 --- !u!195 &1637662986
@@ -21135,3 +21266,4 @@ SceneRoots:
   - {fileID: 1203171880}
   - {fileID: 479785244}
   - {fileID: 1845407591}
+  - {fileID: 989755120}

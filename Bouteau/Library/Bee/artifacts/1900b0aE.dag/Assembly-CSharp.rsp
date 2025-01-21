@@ -361,6 +361,7 @@
 "Assets/AQUAS-Lite/Scripts/AQUAS_Lite_Reflection.cs"
 "Assets/imported stuff/ChestFree/RotatorTreasure.cs"
 "Assets/imported stuff/Collectible/Rotator.cs"
+"Assets/PlayerInventory.cs"
 "Assets/script/BossBehavior.cs"
 "Assets/script/EnemyBehavior.cs"
 "Assets/script/EnemyController.cs"
@@ -368,6 +369,7 @@
 "Assets/script/PlayerHealth.cs"
 "Assets/script/player_movement.cs"
 "Assets/script/script.cs"
+"Assets/script/win.cs"
 -langversion:9.0
 /deterministic
 /optimize+
